@@ -1,4 +1,4 @@
-# Scrimba Frontend Career Path - (Leads Saver Chrome Extension - Module 03)
+# Scrimba Frontend Career Path - (Emoji Personality - Module 03)
 
 This is a solution to the [Scrimba Frontend Career Path - (Module/App name here)](https://scrimba.com/learn/frontend).
 
@@ -23,31 +23,20 @@ This is a solution to the [Scrimba Frontend Career Path - (Module/App name here)
 
 Users should be able to Code/Understand:
 
-- const
-- addEventListener()
-- innerHTML
-- input.value
-- fucntion parameters
-- template strings
-- localStorage
-- The JSON object
-- objects in arrays
+- createElement()
+- append()
+- 
 
 ### Screenshot
 
 ![](./initial.png)
-![](./saveTab1.png)
-![](./saveTab2.png)
-![](./delete.png)
-
-
+![](./remove.png)
+![](./add.png)
 
 ### Links
 
-- Solution Github URL: [https://github.com/Rod-Barbosa/lead-saver-chrome-extension](https://github.com/Rod-Barbosa/lead-saver-chrome-extension)
-- Live Site URL: [https://rodrigo-lead-saver-chrome-extension.netlify.app/](https://rodrigo-lead-saver-chrome-extension.netlify.app/)
-- May hte next one do a better job at translating a browser extension into a website. 
-- If you want to install and see how it works, click the github link, download the files, open your google chrome extensions and point the downloads folder. It should do the trick.
+- Solution Github URL: [https://github.com/Rod-Barbosa/emoji-personality](https://github.com/Rod-Barbosa/emoji-personality)
+- Live Site URL: [https://rodrigo-lead-saver-chrome-extension.netlify.app/](https://rodrigo-emoji-personality.netlify.app/)
 
 ## My process
 
@@ -56,49 +45,10 @@ Users should be able to Code/Understand:
 - Semantic HTML5 markup
 - CSS custom properties
 - JavaScript
-- Chrome Dev tools
 
 
 ### What I learned
-Making a chrome extension is much easier than it looks like.
-
-To see how you can add code snippets, see below:
-
-This is the only "hard coded" part of my html list of leads
-```html
-        <ul id="ul-el">
-        </ul>
-```
-The list is rendered dynamicly, after being turned into a string. The string conversion happens for performance purposes, given that innerHTML is taxing. Changing the DOM is never free, and keeping performance costs to a minimum is always a good idea
-```js
-function render(leads) {
-    let listItems = ""
-    for (let i = 0; i < leads.length; i++) {
-        listItems += `
-            <li>
-                <a target='_blank' href='${leads[i]}'>
-                    ${leads[i]}
-                </a>
-            </li>
-        `
-    }
-    ulEl.innerHTML = listItems
-}
-```
-Grabbing the current tab on chrome is much easier than it looks. Interesting is that how it actually make sence to have a tab be checked at the same time for "active" and currentWindow status. Maybe you have two broswers open... you want to select the tab you are using, not the one on the background.
-```js
-tabBtn.addEventListener("click", function(){    
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
-        myLeads.push(tabs[0].url)
-        localStorage.setItem("myLeads", JSON.stringify(myLeads) )
-        render(myLeads)
-    })
-})
-```
-This saves the Leads after the tab is closed. Allowing for a much better extension. You don't have to keep it open in order to maintain the saved Leads.
-```js
-localStorage.setItem("myLeads", JSON.stringify(myLeads) )
-```
+Creating a container and appending it to a "parent" is very useful, and intuitive.
 
 ### Continued development
 
