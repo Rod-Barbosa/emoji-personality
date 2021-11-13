@@ -27,7 +27,6 @@ Users should be able to Code/Understand:
 
 - createElement()
 - append()
-- 
 
 ### Screenshot
 
