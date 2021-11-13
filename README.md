@@ -21,6 +21,8 @@ This is a solution to the [Scrimba Frontend Career Path - (Module/App name here)
 
 ### The challenge
 
+Represent your personality with emojis
+
 Users should be able to Code/Understand:
 
 - createElement()
