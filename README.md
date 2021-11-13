@@ -57,14 +57,8 @@ The course is getting more and more interesting. I'm very surprised how educatio
 
 ### Useful resources
 
-- [Select input color change](https://stackoverflow.com/questions/43427993/change-the-color-of-a-input-field-when-selected?rq=1) - Quick and sweet CSS trick
-- [.value](https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript) - This is always gonna be there. Grabbing the actual value the user is inputting on the browser. This will become second nature and it is nice to know how it works
-- [Clear textbox JavaScript](https://stackoverflow.com/questions/4135818/how-to-clear-a-textbox-using-javascript) - Very rarely we want the input field to keep what was just saved
-- [Open Link on another tab](https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/) - target="_blank"
-- [Double click Event](https://techstacker.com/how-to-detect-double-clicks-with-vanilla-javascript/) - To avoid losing all your leads but accident, delete checks for double click before clearing localStorage
-- [Select current Tab Chrome](https://stackoverflow.com/questions/6718256/how-do-you-use-chrome-tabs-getcurrent-to-get-the-page-object-in-a-chrome-extensi) - Easier to go on SO than to go to the google official explanation
+- [Create DOM Element](https://www.w3schools.com/jsref/dom_obj_span.asp) - Simple, but helpful. By the way, no need to use capital letters between quotes
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
@@ -74,4 +68,4 @@ The course is getting more and more interesting. I'm very surprised how educatio
 
 ## Acknowledgments
 
-Thanks again the SO for showing hwo to deal with crome tabs without having to read all the documentation
+The scrimba dischord community is really cool. Every tiny step feels like it is building towards something great
